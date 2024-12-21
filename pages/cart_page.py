@@ -7,7 +7,7 @@ class CartPage:
     def __init__(self, driver):
         self.driver = driver
         self.product_link = (By.CLASS_NAME, "card-title")  # Ürün başlığı
-        self.add_to_cart_button = (By.XPATH, "//a[@onclick='addToCart(8)']")  # Doğru XPath
+        self.add_to_cart_button = (By.XPATH, "//*[@id='tbodyid']/div[1]/div/div")  # Doğru XPath
         self.cart_link = (By.ID, "cartur")  # Sepet bağlantısı
         self.cart_items = (By.CLASS_NAME, "success")  # Sepetteki öğeler
 
